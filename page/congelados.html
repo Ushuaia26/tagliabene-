@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="google-site-verification" content="NDkHi1AKcY5pMXxP7DyGj1eSKUY344FSli7jCSNY8Tw" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+    <link rel="icon" type="image/png" href="../img/logota.png">
+    
+    <meta name="keywords" content="pastas artesanales, congelados, Rosario, ravioles, sorrentinos, tallarines, Tagliabene">
+    <meta name="description" content="Pastas artesanales, congelados, bebidas y productos de almacén en Rosario. Pedidos por WhatsApp y atención personalizada.">
+    <meta property="og:title" content="Tagliabene Pastas y Congelados">
+    <meta property="og:description" content="Pastas artesanales y congelados en Rosario.">
+    <meta property="og:image" content="https://tagliabenepastasycongelado.vercel.app/img/portada.jpg">
+    <meta property="og:url" content="https://tagliabenepastasycongelado.vercel.app">
+    <meta property="og:type" content="website">
+    <title>Tagliabene Pastas y Congelados | Rosario</title>
+    <title>Congelados | Tagliabene</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="/img/logota.png" alt="logo de tagliabene pastas y congelados">
+        </div>
+        <input type="checkbox" id="open-menu" aria-label="cerrar menú de navegación">
+        <label class="material-symbols-outlined open-button" for="open-menu" aria-label="Abrir menú de navegación">menu</label>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+
+                <li class="header__nav-item">
+                    <a href="https://api.whatsapp.com/send?phone=5493415509995&text=%F0%9F%8D%9D%20%C2%A1Bienvenid@%20a%20la%20casa%20Tagliabene%20%E2%9D%84%EF%B8%8F%20Gracias%20por%20escribirnos.%20Somos%20especialistas%20en%20pastas%20frescas,%20comidas%20caseras%20y%20productos%20congelados,%20listos%20para%20llegar%20a%20tu%20mesa%20con%20la%20mejor%20calidad.%20%20%F0%9F%93%A6%20Hacemos%20entregas%20a%20domicilio.%20%F0%9F%93%8B%20Si%20quer%C3%A9s%20realizar%20un%20pedido,%20%C2%A1solo%20ten%C3%A9s%20que%20escribirnos!%20%20Estamos%20para%20ayudarte%20a%20elegir%20lo%20m%C3%A1s%20rico.%20%E2%9C%A8%20%C2%A1Gracias%20por%20elegirnos!%20%E2%9C%A8">
+                        <img src="/img/whatsapp.png" class="item__img">
+                    </a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="https://www.instagram.com/tagliabene?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                        <img src="/img/instagram.png" class="item__img">
+                    </a>
+                </li>
+
+                <li class="header__nav-item">
+                    <a href="home.html">Sobre Nosotros</a>
+                </li>
+
+                <li class="header__nav-item">
+                    <a href="/page/pastas.html">Pastas</a>
+                    <input type="checkbox" id="submenu-pastas" class="checkbox__submenu">
+                    <label class="material-symbols-outlined icons__submenu" for="submenu-pastas">arrow_drop_down</label>
+                    <ul class="nav__secundario">
+                        <li><a href="/page/pastas.html#nuestras__pastas">Nuestras pastas</a></li>
+                        <li><a href="/page/pastas.html#sorrentinos">Sorrentinos</a></li>
+                        <li><a href="/page/pastas.html#ravioles">Ravioles</a></li>
+                        <li><a href="/page/pastas.html#tallarines">Tallarines & Fideos</a></li>
+                        <li><a href="/page/pastas.html#otras__pastas">Otros</a></li>
+                    </ul>
+                </li>
+
+                <li class="header__nav-item">
+                    <a href="/page/congelados.html">Congelados</a>
+                    <input type="checkbox" id="submenu-congelados" class="checkbox__submenu">
+                    <label class="material-symbols-outlined icons__submenu" for="submenu-congelados">arrow_drop_down</label>
+                    <ul class="nav__secundario">
+                        <li><a href="#nuestros__productos">Nuestros productos</a></li>
+                        <li><a href="#rebosados">Rebozados</a></li>
+                        <li><a href="#pescaderia">Pescadería</a></li>
+                        <li><a href="#carnes">Carnes</a></li>
+                    </ul>
+                </li>
+
+                <li class="header__nav-item">
+                    <a href="/page/bebidas.html">Bebidas</a>
+                    <input type="checkbox" id="submenu-bebidas" class="checkbox__submenu">
+                    <label class="material-symbols-outlined icons__submenu" for="submenu-bebidas">arrow_drop_down</label>
+                    <ul class="nav__secundario">
+                        <li><a href="/page/bebidas.html#sin__alcohol">Sin alcohol</a></li>
+                        <li><a href="/page/bebidas.html#cervezas">Cervezas</a></li>
+                        <li><a href="/page/bebidas.html#vinos">Vinos & Espumantes</a></li>
+                        <li><a href="/page/bebidas.html#alcohol">Con alcohol</a></li>
+                    </ul>
+                </li>
+
+                <li class="header__nav-item">
+                    <a href="/page/almacen.html">Almacén</a>
+                    <input type="checkbox" id="submenu-almacen" class="checkbox__submenu">
+                    <label class="material-symbols-outlined icons__submenu" for="submenu-almacen">arrow_drop_down</label>
+                    <ul class="nav__secundario">
+                        <li><a href="/page/almacen.html#nuestros__productos">Nuestros productos</a></li>
+                        <li><a href="/page/almacen.html#snack">Snack & Frutos secos</a></li>
+                        <li><a href="/page/almacen.html#conservas">Conservas</a></li>
+                        <li><a href="/page/almacen.html#lacteos">Lácteos</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CARRUSEL DE CATEGORÍAS -->
+<div class="categorias-wrapper">
+    <div class="categorias-carrusel">
+        <a href="#rebozados" class="categoria-card">
+            <i class="ti ti-tools-kitchen-2"></i>
+            <span>REBOZADOS</span>
+        </a>
+        <a href="#pescaderia" class="categoria-card">
+            <i class="ti ti-fish"></i>
+            <span>PESCADERÍA</span>
+        </a>
+        <a href="#empanadas" class="categoria-card">
+            <i class="ti ti-bread"></i>
+            <span>EMPANADAS & TARTAS</span>
+        </a>
+        <a href="#hamburguesas" class="categoria-card">
+            <i class="ti ti-meat"></i>
+            <span>HAMBURGUESAS</span>
+        </a>
+        
+        <a href="#celiaco" class="categoria-card">
+            <i class="ti ti-ban"></i>
+            <span>CELÍACO</span>
+        </a>
+
+        <a href="#otros" class="categoria-card">
+            <i class="ti ti-dots-circle-horizontal"></i>
+            <span>OTROS</span>
+        </a>
+    </div>
+</div>
+
+
+<!-- REBOZADOS -->
+<section id="rebozados" class="menu-section">
+    <h2 class="section-title">REBOZADOS</h2>
+
+    <div class="lista-wrapper">
+
+        <div class="producto">
+            <span class="producto__nombre">Medallón de Pollo</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">x4</span>
+                    <span class="precio-valor" id="CON-001">$4.200</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Medallón Pollo y Espinaca</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">x4</span>
+                    <span class="precio-valor" id="CON-002">$4.800</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Nuggets</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">300g</span>
+                    <span class="precio-valor" id="CON-003">$4.800</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Patitas de Pollo Jamón y Queso</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">300g</span>
+                    <span class="precio-valor" id="CON-004">$3.800</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Palitos de Pollo</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">u</span>
+                    <span class="precio-valor" id="CON-005">Consultar</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Croqueta de Papa Jamón y Queso</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">300g</span>
+                    <span class="precio-valor" id="CON-006">$4.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Croqueta de Espinaca</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">300g</span>
+                    <span class="precio-valor" id="CON-007">$3.800</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Croqueta</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">u</span>
+                    <span class="precio-valor" id="CON-008">Consultar</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Bastón de Muzzarella</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">300g</span>
+                    <span class="precio-valor" id="CON-009">$7.400</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Supremas</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">1 kg</span>
+                    <span class="precio-valor" id="CON-010">$9.500</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <p class="section-marca">PESCADERIA</p>
+
+    <div class="lista-wrapper">
+        <div class="producto">
+            <span class="producto__nombre">Medallón de Merluza</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">x4</span>
+                    <span class="precio-valor" id="CON-011">$3.800</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Medallón Merluza, Espinaca y Queso</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">x4</span>
+                    <span class="precio-valor" id="CON-012">$4.100</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Filet Merluza Rebozado</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">u</span>
+                    <span class="precio-valor" id="CON-013">Consultar</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Rabas</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">u</span>
+                    <span class="precio-valor" id="CON-014">Consultar</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PESCADERÍA -->
+<section id="pescaderia" class="menu-section">
+    <h2 class="section-title">PESCADERÍA</h2>
+
+    <div class="lista-wrapper">
+
+        <div class="producto">
+            <span class="producto__nombre">Boga Despinada</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">1 kg</span>
+                    <span class="precio-valor" id="CON-015">$19.500</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Filet Merluza Finas Hierbas</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">1 kg</span>
+                    <span class="precio-valor" id="CON-016">$16.800</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Filet de Merluza</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">u</span>
+                    <span class="precio-valor" id="CON-017">Consultar</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Filet Trucha Salmonada</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">1 kg</span>
+                    <span class="precio-valor" id="CON-018">$31.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Tubo de Calamar</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">u</span>
+                    <span class="precio-valor" id="CON-019">Consultar</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Langostinos</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">300g</span>
+                    <span class="precio-valor" id="CON-020">$9.900</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Mejillones</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">300g</span>
+                    <span class="precio-valor" id="CON-021">$6.500</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Mix de Mariscos</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">u</span>
+                    <span class="precio-valor" id="CON-022">Consultar</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- EMPANADAS & TARTAS -->
+<section id="empanadas" class="menu-section">
+    <h2 class="section-title">EMPANADAS & TARTAS</h2>
+
+    <p class="section-marca">Pizzas</p>
+    <div class="lista-wrapper">
+
+        <div class="producto">
+            <span class="producto__nombre">Pizza 8 Porciones</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">u</span>
+                    <span class="precio-valor" id="CON-023">$9.900</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Pizza 12 Porciones</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">u</span>
+                    <span class="precio-valor" id="CON-024">Consultar</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <p class="section-marca">Tartas</p>
+    <div class="lista-wrapper">
+
+        <div class="producto">
+            <span class="producto__nombre">Tarta 1/2 Pollo</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">u</span>
+                    <span class="precio-valor" id="CON-025">$9.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Tarta 1/2 Jamón y Queso</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">u</span>
+                    <span class="precio-valor" id="CON-026">$9.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Tarta 1/2 Acelga</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">u</span>
+                    <span class="precio-valor" id="CON-027">$9.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Tarta 1/2 Fugazza</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">u</span>
+                    <span class="precio-valor" id="CON-028">$9.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Tarta 1/2 Vegetales</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">u</span>
+                    <span class="precio-valor" id="CON-029">$9.000</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <p class="section-marca">Empanadas</p>
+    <div class="lista-wrapper">
+
+        <div class="producto">
+            <span class="producto__nombre">Empanadas de Carne Tagliabene</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">x4</span>
+                    <span class="precio-valor" id="CON-030">$7.600</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Empanadas de Boga Tagliabene</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">x4</span>
+                    <span class="precio-valor" id="CON-031">$7.600</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Empanadas de Jamón y Queso</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">x4</span>
+                    <span class="precio-valor" id="CON-032">$7.400</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Empanadas de Trucha</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">x4</span>
+                    <span class="precio-valor" id="CON-033">$9.100</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Tartitas Blend de Hongos</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">x2</span>
+                    <span class="precio-valor" id="CON-034">$6.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Strudel de Pollo</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">x4</span>
+                    <span class="precio-valor" id="CON-035">$7.700</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Strudel Jamón y Queso</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">x4</span>
+                    <span class="precio-valor" id="CON-036">$7.700</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Strudel de Verdura</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">x4</span>
+                    <span class="precio-valor" id="CON-037">$7.700</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- HAMBURGUESAS -->
+<section id="hamburguesas" class="menu-section">
+    <h2 class="section-title">HAMBURGUESAS</h2>
+
+    <div class="lista-wrapper">
+
+        <div class="producto">
+            <span class="producto__nombre">Hamburguesa Casera Swift</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">x2</span>
+                    <span class="precio-valor" id="CON-038">$5.300</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Hamburguesa Común Swift</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">x2</span>
+                    <span class="precio-valor" id="CON-039">$3.200</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Hamburguesa Vegetariana</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad"></span>
+                    <span class="precio-valor" id="CON-040">consultar</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- OTROS -->
+<section id="otros" class="menu-section">
+    <h2 class="section-title">OTROS</h2>
+
+    <div class="lista-wrapper">
+
+        <div class="producto">
+            <span class="producto__nombre">Medallón Natural de Calabaza</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">x2</span>
+                    <span class="precio-valor" id="CON-041">$4.100</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Medallón Natural de Espinaca</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">x2</span>
+                    <span class="precio-valor" id="CON-042">$4.100</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Medallón Natural de Porotos</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">x2</span>
+                    <span class="precio-valor" id="CON-043">$4.100</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Medallón Natural de Garbanzo</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">x2</span>
+                    <span class="precio-valor" id="CON-044">$4.100</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Medallón Natural de Lentejas</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">x2</span>
+                    <span class="precio-valor" id="CON-045">$4.100</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Milanesa de Soja</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">x4</span>
+                    <span class="precio-valor" id="CON-046">$5.400</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Papas 9mm</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">500g</span>
+                    <span class="precio-valor" id="CON-047">$4.100</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Papas Nositte</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">600g</span>
+                    <span class="precio-valor" id="CON-048">$7.750</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Papas Smile</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">700g</span>
+                    <span class="precio-valor" id="CON-049">$8.100</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- CELÍACO -->
+<section id="celiaco" class="menu-section">
+    <h2 class="section-title">CELÍACO</h2>
+    <p class="section-marca">Sin T.A.C.C.</p>
+
+    <div class="lista-wrapper">
+
+        <div class="producto">
+            <span class="producto__nombre">Empanadas de Carne</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">x4</span>
+                    <span class="precio-valor" id="CON-050">$7.100</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Empanadas Jamón y Queso</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">x4</span>
+                    <span class="precio-valor" id="CON-051">$7.100</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Tarta Jamón y Queso</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">u</span>
+                    <span class="precio-valor" id="CON-052">$10.600</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Tarta de Verdura</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">u</span>
+                    <span class="precio-valor" id="CON-053">$10.600</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <span class="producto__nombre">Tarta de Pollo</span>
+            <div class="producto__precios">
+                <div class="precio-item">
+                    <span class="precio-cantidad">u</span>
+                    <span class="precio-valor" id="CON-054">$10.600</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="productos" id="productos">
+    <h2 class="productos__title">PRODUCTOS TAGLIABENE</h2>
+
+    <div class="productos__promos-container">
+
+        <div class="productos__promos video-card">
+            <video autoplay muted loop playsinline class="promo-video">
+                <source src="../video/rebozados.mp4" type="video/mp4">
+            </video>
+
+            <a href="./pages/congelados.html">
+            </a>
+        </div>
+
+        <div class="productos__promos video-card">
+            <video autoplay muted loop playsinline class="promo-video">
+                <source src="../video/ravioles.mp4" type="video/mp4">
+            </video>
+
+            <a href="./pages/congelados.html">
+            </a>
+        </div>
+
+        <div class="productos__promos video-card">
+            <video autoplay muted loop playsinline class="promo-video">
+                <source src="../video/canelones.mp4" type="video/mp4">
+            </video>
+
+            <a href="./pages/congelados.html">
+            </a>
+        </div>
+
+        <div class="productos__promos video-card">
+            <video autoplay muted loop playsinline class="promo-video">
+                <source src="../video/sorrentinos.mp4" type="video/mp4">
+            </video>
+
+            <a href="./pages/congelados.html">
+            </a>
+        </div>
+
+        <div class="productos__promos video-card">
+            <video autoplay muted loop playsinline class="promo-video">
+                <source src="../video/PIZZAS.mp4" type="video/mp4">
+            </video>
+
+            <a href="./pages/congelados.html">
+            </a>
+        </div>
+
+    </div>
+</section>
+
+    <a class="whatsapp-float" href="https://api.whatsapp.com/send?phone=5493415509995&text=%F0%9F%8D%9D%20%C2%A1Bienvenid@%20a%20la%20casa%20Tagliabene!">
+    <img src="/img/whatsapp.png" alt="WhatsApp">
+</a>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__column">
+                <h3 class="footer__title">Contacto</h3>
+                <p class="footer__item">Tel:+54 9 3415 50-9995</p>
+                <p class="footer__item">Email: info@tagliabene.com</p>
+                <p class="footer__item">Rosario, Argentina</p>
+            </div>
+            <div class="footer__column footer__hover">
+                <h3 class="footer__title">Enlaces</h3>
+                <a href="/index.html#profile" class="footer__link">Inicio</a>
+                <a href="/index.html#productos" class="footer__link">Promos</a>
+                <a href="https://api.whatsapp.com/send?phone=5493415509995" class="footer__link">Contacto</a>
+            </div>
+            <div class="footer__column">
+                <h3 class="footer__title">Síguenos</h3>
+                <div class="footer__social footer__hover">
+                    <a href="https://api.whatsapp.com/send?phone=5493415509995"><img src="/img/whatsapp.png" class="img__footer" alt="WhatsApp"></a>
+                    <a href="https://www.instagram.com/tagliabene?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="/img/instagram.png" class="img__footer" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">© 2026 Tagliabene. Todos los derechos reservados.</div>
+    </footer>
+<script src="js/precios.js"></script> 
+<script src="/js/scripts.js"></script>
+</body>
+</html>
