@@ -1,29 +1,32 @@
-// precios.js - Tagliabene / Cuervo Blanco
-const SHEET_ID = '1tBJkxy2J3OpNGRUL6lrIerv4tqwoqVNecQFsbkmugfQ'; 
-const SHEET_URL = `https://google.com{SHEET_ID}/export?format=csv`;
+const URL =
+  "https://script.google.com/macros/s/AKfycbyRTQ8fvl76sBY0LX5tYKmJuwFPnD-7pvMt1kjP4P73r-_7q-paS3hwevbpw02ntseY/exec";
 
-async function traerPreciosVivos() {
-  try {
-    const res = await fetch(SHEET_URL);
-    const csv = await res.text();
-    
-    csv.split('\n').forEach(fila => {
-      const columnas = fila.split(',');
-      const idHTML = columnas[0]?.trim();  // Columna A (ID)
-      const precioX = columnas[1]?.trim(); // Columna B (Precio)
-      
-      // Filtro para ignorar la fila de títulos y evitar celdas vacías
-      if (idHTML && idHTML !== "ID" && precioX) {
-        const elemento = document.getElementById(idHTML);
-        if (elemento) {
-          elemento.innerText = precioX;
+async function cargarPrecios() {
+    try {
+        const respuesta = await fetch(URL);
+        const precios = await respuesta.json();
+
+        for (const id in precios) {
+            const elemento = document.getElementById(id);
+
+            if (elemento) {
+
+                const precio = precios[id];
+
+                if (typeof precio === "number") {
+                    elemento.textContent =
+                        "$" + precio.toLocaleString("es-AR");
+                } else {
+                    elemento.textContent = precio;
+                }
+            }
         }
-      }
-    });
-  } catch (err) {
-    console.error("Error al cargar la carta desde la nube:", err);
-  }
+
+        console.log("✅ Precios actualizados");
+    }
+    catch(error){
+        console.error(error);
+    }
 }
 
-// Se ejecuta en segundo plano cuando la página ya cargó
-window.addEventListener('load', traerPreciosVivos);
+document.addEventListener("DOMContentLoaded", cargarPrecios);
