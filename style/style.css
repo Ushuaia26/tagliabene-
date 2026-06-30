@@ -899,6 +899,30 @@ h1 {
 }
 
 /*---- MENU SECCIONES ----*/
+
+.precio-valor {
+    opacity: 0.4;
+    transition: opacity 0.4s;
+}
+
+.precio-valor.cargado {
+    opacity: 1;
+}
+
+/* Animación de los puntos suspensivos */
+@keyframes puntos {
+    0%   { content: "."; }
+    33%  { content: ".."; }
+    66%  { content: "..."; }
+    100% { content: "."; }
+}
+
+.precio-valor:not(.cargado)::after {
+    content: ".";
+    animation: puntos 1.2s steps(1) infinite;
+}
+
+
 .menu-section {
     padding: 100px 20px 120px;
     max-width: 900px;
