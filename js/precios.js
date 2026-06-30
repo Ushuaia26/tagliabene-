@@ -3,30 +3,34 @@ const URL =
 
 async function cargarPrecios() {
     try {
-        const respuesta = await fetch(URL);
-        const precios = await respuesta.json();
-
-        for (const id in precios) {
-            const elemento = document.getElementById(id);
-
-            if (elemento) {
-
-                const precio = precios[id];
-
-                if (typeof precio === "number") {
-                    elemento.textContent =
-                        "$" + precio.toLocaleString("es-AR");
-                } else {
-                    elemento.textContent = precio;
-                }
-            }
+        const cache = localStorage.getItem("precios");
+        if (cache) {
+            aplicarPrecios(JSON.parse(cache));
         }
 
+        const respuesta = await fetch(URL);
+        const precios = await respuesta.json();
+        localStorage.setItem("precios", JSON.stringify(precios));
+        aplicarPrecios(precios);
+
         console.log("✅ Precios actualizados");
-    }
-    catch(error){
-        console.error(error);
+    } catch(error) {
+        console.error("❌ Error al cargar precios:", error);
     }
 }
 
-document.addEventListener("DOMContentLoaded", cargarPrecios);
+function aplicarPrecios(precios) {
+    for (const id in precios) {
+        const idLimpio = id.trim();
+        const elemento = document.getElementById(idLimpio);
+        if (elemento) {
+            const precio = precios[id];
+            elemento.textContent = typeof precio === "number"
+                ? "$" + precio.toLocaleString("es-AR")
+                : precio;
+            elemento.classList.add("cargado");
+        }
+    }
+}
+
+cargarPrecios();
